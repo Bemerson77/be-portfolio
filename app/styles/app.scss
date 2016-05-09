@@ -1,0 +1,129 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+%grey-background {
+  background-color: rgba(54, 59, 68, 1);
+}
+
+%grey-font {
+  color: rgba(54, 59, 68, 1);
+}
+
+%pink-background {
+  background-color: rgba(255, 82, 114, 1);
+}
+
+%pink-font {
+  color: rgba(255, 82, 114, 1);
+}
+
+
+
+// Header
+
+$header-height: 75px;
+
+.header-outer {
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+}
+
+.header-logo {
+  display: inline-block;
+  position: absolute;
+}
+
+.header-inner {
+  height: $header-height;
+  text-align: center;
+}
+
+.header-nav {
+  height: $header-height;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.header-nav-item {
+  height: $header-height;
+  display: inline-block;
+  padding: 0 25px;
+
+  a {
+    line-height: $header-height;
+    display: block;
+    color: rgba(210, 200, 191, 1);
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    transition: 0.4s;
+
+    &:hover {
+      @extend %pink-font;
+    }
+  }
+}
+
+.menu-title {
+  position: absolute;
+  text-align: right;
+}
+
+// Banner
+
+.banner-outer {
+  background: url('../images/banner-bg.jpeg') center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-outer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.1);
+}
+
+.banner-inner {
+  position: relative;
+  top: 40%;
+}
+
+.banner-title {
+  font-size: 70px;
+  @extend %grey-font;
+
+  span {
+    @extend %pink-font;
+  }
+}
+
+.banner-sub {
+  text-transform: uppercase;
+  color: white;
+}
