@@ -5,7 +5,6 @@ $('.menu').click(function(){
   $(this).toggleClass('open');
 });
 
-
 $('.menu').click(function(){
   $('.header-inner').slideToggle(300, function(){
     $('.header-inner').removeClass('hidden');

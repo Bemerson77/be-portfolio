@@ -1,0 +1,59 @@
+// Header
+
+$header-height: 75px;
+$header-font-size: 15px;
+
+
+
+.header-logo {
+  display: inline-block;
+  position: absolute;
+}
+
+.header-inner {
+  height: $header-height;
+  text-align: center;
+  background-color: white;
+}
+
+.header-nav {
+  height: $header-height;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.header-nav-item {
+  height: $header-height;
+  display: inline-block;
+
+  a {
+    line-height: $header-height;
+    display: block;
+    color: rgba(210, 200, 191, 1);
+    text-decoration: none;
+    font-size: $header-font-size;
+    padding: 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    transition: 0.4s;
+
+    &:hover {
+      @extend %pink-font;
+      text-decoration: none;
+    }
+  }
+}
+
+.menu-title {
+  width: 30px;
+  font-size: $header-font-size;
+  @extend %grey-font;
+  position: absolute;
+  right: 90px;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
