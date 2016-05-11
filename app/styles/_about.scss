@@ -1,0 +1,38 @@
+// about
+
+$about-height: 650px;
+
+.about-outer {
+  height: $about-height;
+  @extend %light-grey-background;
+}
+
+.about-inner {
+  height: $about-height;
+}
+
+.about-title {
+  margin: 80px;
+  text-align: left;
+  font-size: 70px;
+  @extend %grey-font;
+
+  span {
+    @extend %pink-font;
+  }
+}
+
+.about-content {
+
+  h4 {
+    @extend %grey-font;
+    line-height: 35px;
+  }
+}
+
+.about-photo-wrapper {
+
+  img {
+    border-radius: 2px;
+  }
+}

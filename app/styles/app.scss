@@ -1,6 +1,8 @@
 @import "header";
 @import "hamburg";
 @import "banner";
+@import "about";
+@import "skills";
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
@@ -33,6 +35,14 @@ img {
 
 %pink-font {
   color: rgba(255, 82, 114, 1);
+}
+
+%light-grey-background {
+  background-color: rgba(213, 213, 213, 1);
+}
+
+%light-grey-font {
+  color: rgba(213, 213, 213, 1);
 }
 
 
