@@ -4,4 +4,5 @@ $skills-height: 800px;
 
 .skills-outer {
   height: $skills-height;
+  @extend %grey-background;
 }
