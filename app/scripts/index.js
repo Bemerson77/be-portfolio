@@ -7,3 +7,11 @@ $('.menu').click(function(){
   $('.header-nav-item').toggleClass('nav-active');
   $('.header-logo').toggleClass('logo-active');
 });
+
+
+// parallax
+$(document).scroll(function() {
+  $(".banner-outer").css({
+    "background-position-y": (-$(this).scrollTop()/60)
+  })
+});

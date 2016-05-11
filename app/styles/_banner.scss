@@ -4,7 +4,12 @@
   background: url('../images/banner-bg.jpeg') center center;
   background-size: cover;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-position: 0 0;
+  transition: 0s linear;
+  transition-property: background-position-y;
 }
 
 .banner-outer::before {
