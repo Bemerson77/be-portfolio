@@ -28,8 +28,26 @@
 }
 
 .banner-title {
+  opacity: 0;
   font-size: 70px;
+  position: relative;
+  top: -15px;
   @extend %grey-font;
+  transition: opacity 0.5s, top 0.5s ease-in-out;
+  transition-property: opacity, top;
+  transition-duration: 0.5s 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial;
+
+  &:hover {
+    opacity: 1;
+    top: 0;
+    transition: opacity 0.5s, top 0.5s ease-in-out;
+    transition-property: opacity, top;
+    transition-duration: 0.5s 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
+  }
 
   span {
     @extend %pink-font;
