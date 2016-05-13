@@ -7,6 +7,8 @@ var $ = require('jquery');
 //   })
 // });
 
+$('.banner-title').addClass('banner-title-load');
+
 // hamburger menu function
 $('.menu').click(function(){
   $(this).toggleClass('open');
