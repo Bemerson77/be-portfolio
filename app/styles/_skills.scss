@@ -6,3 +6,34 @@ $skills-height: 800px;
   height: $skills-height;
   @extend %grey-background;
 }
+
+.skills-inner {
+  height: $skills-height;
+}
+
+.skills-title {
+  margin: 80px;
+  text-align: left;
+  font-size: 70px;
+  @extend %light-grey-font;
+
+  span {
+    @extend %pink-font;
+  }
+}
+
+.skills-list-items {
+  padding: 0;
+}
+
+.skills-list-items {
+  @extend %light-grey-font;
+  list-style: none;
+  text-align: center;
+  font-size: 150px;
+}
+
+
+.skills-item-title {
+  font-size: 10px;
+}
