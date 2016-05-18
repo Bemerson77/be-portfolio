@@ -18,7 +18,7 @@ $('.menu').click(function(){
 });
 
 $('.skills-item a').hover(function(e){
-  if (e.type == "mouseenter") {
+  if (e.type === "mouseenter") {
     $(this).find('h4').addClass('skills-hover');
   }else{
     $(this).find('h4').removeClass('skills-hover');
