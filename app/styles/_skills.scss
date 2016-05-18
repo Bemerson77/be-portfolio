@@ -1,6 +1,6 @@
 // skills
 
-$skills-height: 800px;
+$skills-height: 850px;
 
 .skills-outer {
   height: $skills-height;
@@ -24,16 +24,65 @@ $skills-height: 800px;
 
 .skills-list-items {
   padding: 0;
-}
-
-.skills-list-items {
-  @extend %light-grey-font;
   list-style: none;
   text-align: center;
-  font-size: 150px;
+  font-size: 165px;
+}
+
+.skills-item-wrapper {
+  height: 200px;
+}
+
+.skills-item {
+  height: 200px;
+  margin-bottom: 75px;
+  overflow: hidden;
+
+  a {
+    text-decoration: none !important;
+    @extend %light-grey-font;
+    transition: opacity 0.5s, color 0.5s ease-in-out;
+    transition-property: opacity, color;
+    transition-duration: 0.5s 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
+
+    &:hover {
+      @extend %pink-font;
+      text-decoration: none !important;
+      opacity: .6;
+      transition: opacity 0.15s, color 0.15s ease-in-out;
+      transition-property: opacity, color;
+      transition-duration: 0.15s 0.15s;
+      transition-timing-function: ease-in-out;
+      transition-delay: initial, initial;
+    }
+  }
 }
 
 
 .skills-item-title {
-  font-size: 10px;
+  font-size: 35px;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // @extend %light-grey-font;
+  color: white;
+  position: relative;
+  bottom: 70px;
+  opacity: 0;
+  transition: opacity 0.15s, bottom 0.15s ease-in-out;
+  transition-property: opacity, bottom;
+  transition-duration: 0.15s 0.15s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial;
+
+  &.skills-hover {
+    bottom: 150px;
+    opacity: 1;
+    transition: opacity 0.15s, bottom 0.15s ease-in-out;
+    transition-property: opacity, bottom;
+    transition-duration: 0.15s 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial, initial;
+  }
 }
