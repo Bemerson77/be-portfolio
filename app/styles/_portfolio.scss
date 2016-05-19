@@ -1,0 +1,190 @@
+// portfolio
+
+.portfolio-outer {
+  height: 100%;
+  @extend %light-grey-background;
+  // background-color: white;
+  padding: 0;
+}
+
+.portfolio-inner {
+  padding: 0;
+}
+
+.portfolio-title-wrapper {
+  background-color: rgba(198, 198, 198, 1);
+}
+
+.portfolio-title {
+  display: inline-block;
+  margin: 40px;
+  text-align: left;
+  font-size: 70px;
+  @extend %grey-font;
+
+  span {
+    @extend %pink-font;
+  }
+}
+
+$project-height: 500px;
+
+// project-one
+
+.project-one {
+  height: $project-height;
+  padding: 0;
+}
+
+.project-one-content {
+  height: $project-height;
+}
+
+.project-one-img {
+  background: url('../images/gearvibes.png');
+  background-size: cover;
+  height: $project-height;
+}
+
+.project-one-img::before {
+  content: "";
+  position: absolute;
+  background: rgba(54, 59, 68, 1);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.25s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+}
+
+.project-one-img:hover::before {
+  opacity: 0.6;
+}
+
+// .project-one-content {
+//   background-color: rgba(198, 198, 198, 1);
+// }
+
+.project-one-title {
+  // text-transform: uppercase;
+  @extend %grey-font;
+  text-align: center;
+  font-size: 50px;
+}
+
+// project-two
+
+.project-two-img {
+  background: url('../images/github.png');
+  background-size: cover;
+  height: $project-height;
+}
+
+.project-two-img::before {
+  content: "";
+  position: absolute;
+  background: rgba(54, 59, 68, 1);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.25s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+}
+
+.project-two-img:hover::before {
+  opacity: 0.6;
+}
+
+// project-three
+
+.project-three-img {
+  background: url('../images/surfandpaddle.png');
+  background-size: cover;
+  height: $project-height;
+}
+
+.project-three-img::before {
+  content: "";
+  position: absolute;
+  background: rgba(54, 59, 68, 1);
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.25s ease-in-out;
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+}
+
+.project-three-img:hover::before {
+  opacity: 0.6;
+}
+
+
+
+// global-project-selectors
+
+.project-img-inner {
+  text-align: center;
+  height: $project-height;
+}
+
+.page-link-wrapper {
+  height: $project-height;
+}
+
+.code-link-wrapper {
+  height: $project-height;
+}
+
+.project-link {
+  text-decoration: none;
+  display: inline-block;
+  padding: 30px;
+  @extend %grey-background;
+  border-radius: 100%;
+  position: relative;
+  top: 180px;
+  visibility: hidden;
+  opacity: 0;
+  transition: background-color 0.25s, visibility 0.25s, opacity 0.25s ease-in-out;
+  transition-property: background-color, visibility, opacity;
+  transition-duration: 0.25s 0.25s 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial, initial;
+
+  &.project-hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &:hover {
+    @extend %pink-background;
+  }
+}
+
+.project-link i {
+  font-size: 80px;
+  color: white;
+}
+
+.page-link {
+  right: -100px;
+}
+
+.code-link {
+  left: -100px;
+}

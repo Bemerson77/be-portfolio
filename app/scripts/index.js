@@ -24,3 +24,11 @@ $('.skills-item a').hover(function(e){
     $(this).find('h4').removeClass('skills-hover');
   }
 });
+
+$('.project-img').hover(function(e){
+  if (e.type === "mouseenter") {
+    $(this).find('a').addClass('project-hover');
+  }else{
+    $(this).find('a').removeClass('project-hover');
+  }
+});
