@@ -2,8 +2,6 @@
 
 .portfolio-outer {
   height: 100%;
-  @extend %light-grey-background;
-  // background-color: white;
   padding: 0;
 }
 
@@ -12,12 +10,12 @@
 }
 
 .portfolio-title-wrapper {
-  background-color: rgba(198, 198, 198, 1);
+  @extend %light-grey-background;
 }
 
 .portfolio-title {
   display: inline-block;
-  margin: 40px;
+  margin: 80px;
   text-align: left;
   font-size: 70px;
   @extend %grey-font;
@@ -27,7 +25,7 @@
   }
 }
 
-$project-height: 500px;
+$project-height: 450px;
 
 // project-one
 
@@ -44,34 +42,31 @@ $project-height: 500px;
   background: url('../images/gearvibes.png');
   background-size: cover;
   height: $project-height;
+  position: relative;
 }
 
 .project-one-img::before {
   content: "";
   position: absolute;
-  background: rgba(54, 59, 68, 1);
-  opacity: 0.25;
+  background: rgba(14, 14, 14, 1);
+  opacity: 0.6;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   transition-property: opacity;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
   transition-timing-function: ease-in-out;
   transition-delay: initial;
 }
 
 .project-one-img:hover::before {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
-// .project-one-content {
-//   background-color: rgba(198, 198, 198, 1);
-// }
 
 .project-one-title {
-  // text-transform: uppercase;
   @extend %grey-font;
   text-align: center;
   font-size: 50px;
@@ -83,26 +78,27 @@ $project-height: 500px;
   background: url('../images/github.png');
   background-size: cover;
   height: $project-height;
+  position: relative;
 }
 
 .project-two-img::before {
   content: "";
   position: absolute;
-  background: rgba(54, 59, 68, 1);
-  opacity: 0.25;
+  background: rgba(14, 14, 14, 1);
+  opacity: 0.6;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   transition-property: opacity;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
   transition-timing-function: ease-in-out;
   transition-delay: initial;
 }
 
 .project-two-img:hover::before {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 // project-three
@@ -111,65 +107,113 @@ $project-height: 500px;
   background: url('../images/surfandpaddle.png');
   background-size: cover;
   height: $project-height;
+  position: relative;
 }
 
 .project-three-img::before {
   content: "";
   position: absolute;
-  background: rgba(54, 59, 68, 1);
-  opacity: 0.25;
+  background: rgba(14, 14, 14, 1);
+  opacity: 0.6;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   transition-property: opacity;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
   transition-timing-function: ease-in-out;
   transition-delay: initial;
 }
 
 .project-three-img:hover::before {
-  opacity: 0.6;
+  opacity: 0.8;
+
 }
 
 
 
 // global-project-selectors
 
-.project-img-inner {
+.project-slide-wrapper {
+  position: relative;
+  top: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s, top 0.2s ease-in-out;
+  transition-property: visibility, opacity, top;
+  transition-duration: 0.2s 0.2s 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial, initial, initial;
+
+  &.project-slide-hover {
+    visibility: visible;
+    opacity: 1;
+    top: 0
+  }
+}
+
+.project-img {
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.project-title {
   text-align: center;
-  height: $project-height;
+  color: white;
+  position: relative;
+  top: 80px;
+  font-size: 70px;
+  margin: 0;
+  letter-spacing: 3px;
+  transition: top 0.35s ease-in-out;
+  transition-property: top;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in-out;
+  transition-delay: initial;
+
+  &.project-title-hover {
+    top: 55px;
+  }
 }
 
-.page-link-wrapper {
-  height: $project-height;
+.project-sub {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-weight: 400;
+  margin-top: 140px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
-.code-link-wrapper {
-  height: $project-height;
+.project-links-container {
+  text-align: center;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+}
+
+.project-link-wrapper {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .project-link {
   text-decoration: none;
   display: inline-block;
-  padding: 30px;
+  padding: 20px;
   @extend %grey-background;
   border-radius: 100%;
-  position: relative;
-  top: 180px;
-  visibility: hidden;
-  opacity: 0;
-  transition: background-color 0.25s, visibility 0.25s, opacity 0.25s ease-in-out;
-  transition-property: background-color, visibility, opacity;
-  transition-duration: 0.25s 0.25s 0.25s;
+  transition: background-color 0.25s ease-in-out;
+  transition-property: background-color;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
-  transition-delay: initial, initial, initial;
+  transition-delay: initial;
 
-  &.project-hover {
-    visibility: visible;
-    opacity: 1;
-  }
+
 
   &:hover {
     @extend %pink-background;
@@ -177,14 +221,6 @@ $project-height: 500px;
 }
 
 .project-link i {
-  font-size: 80px;
+  font-size: 40px;
   color: white;
-}
-
-.page-link {
-  right: -100px;
-}
-
-.code-link {
-  left: -100px;
 }
