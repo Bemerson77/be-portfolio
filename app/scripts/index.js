@@ -7,6 +7,35 @@ var $ = require('jquery');
 //   })
 // });
 
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 650);
+        return false;
+      }
+    }
+  });
+});
+
+// var targetOffset = $(".skills-section").offset().top;
+//
+// var $w = $(window).scroll(function(){
+//     if ( $w.scrollTop() > targetOffset ) {
+//       $('.icon').css({"background-color": "white"});
+//       $('.menu-title').css({"color": "white"});
+//       $('.menu div').removeClass('icon').addClass('change');
+//     }else{
+//       $('.icon').css({"background-color": "rgba(54, 59, 68, 1)"});
+//       $('.menu-title').css({"color": "rgba(54, 59, 68, 1)"});
+//       $('.menu div').removeClass('change').addClass('icon');
+//     }
+// });
+
 $('.banner-title').addClass('banner-title-load');
 
 // hamburger menu function

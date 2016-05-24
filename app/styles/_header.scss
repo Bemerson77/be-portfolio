@@ -89,7 +89,7 @@ $header-font-size: 15px;
     line-height: $header-height;
     display: block;
     @extend %light-grey-font;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: $header-font-size;
     padding: 0 25px;
     text-transform: uppercase;
@@ -98,7 +98,7 @@ $header-font-size: 15px;
 
     &:hover {
       @extend %pink-font;
-      text-decoration: none;
+      text-decoration: none !important;
     }
   }
 }

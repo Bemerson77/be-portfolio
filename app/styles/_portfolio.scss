@@ -181,7 +181,7 @@ $project-height: 450px;
   text-align: center;
   color: white;
   position: relative;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 140px;
   text-transform: uppercase;
   font-size: 14px;
@@ -198,7 +198,6 @@ $project-height: 450px;
 
 .project-link-wrapper {
   display: inline-block;
-  margin-left: 20px;
 }
 
 .project-link {
@@ -223,4 +222,8 @@ $project-height: 450px;
 .project-link i {
   font-size: 40px;
   color: white;
+}
+
+.code-link-wrapper {
+  margin-left: 30px;
 }

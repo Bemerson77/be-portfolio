@@ -13,23 +13,24 @@
   <!-- parralax -->
   <!-- sliding header -->
     <header class="header-outer container-fluid">
-      <a class="header-logo" href="#"></a>
+      <a class="header-logo" href="#home"></a>
       <div class="menu-title">Menu</div>
       <div class="menu btn2" data-menu="2">
         <div class="icon"></div>
       </div>
       <div class="header-inner row-fluid">
         <ul class="header-nav center-block">
-          <li class="header-nav-item"><a href="#">Home</a></li>
-          <li class="header-nav-item"><a href="#">About</a></li>
-          <li class="header-nav-item"><a href="#">Skills</a></li>
-          <li class="header-nav-item"><a href="#">Portfolio</a></li>
-          <li class="header-nav-item"><a href="#">Contact</a></li>
+          <li class="header-nav-item"><a href="#home">Home</a></li>
+          <li class="header-nav-item"><a href="#about">About</a></li>
+          <li class="header-nav-item"><a href="#skills">Skills</a></li>
+          <li class="header-nav-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="header-nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </header>
 
   <!-- banner -->
+    <a name="home"></a>
     <section class="banner-outer">
       <div class="banner-inner container">
         <div class="banner-title-container">
@@ -38,6 +39,11 @@
         <div class="banner-sub-container">
           <h3 class="banner-sub text-center">Front End Web Developer</h3>
         </div>
+        <div class="chevron-wrapper text-center">
+          <a href="#about" class="chevron-link">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -45,12 +51,16 @@
     <div id="page-body-wrapper">
     <!-- about -->
       <section class="about-outer">
+        <a name="about"></a>
         <div class="about-inner container">
           <h1 class="about-title">{about: <span>me</span>},</h1>
           <div class="about-contnent-container row">
             <div class="about-content col-md-8">
-              <h4>Lorem Khaled Ipsum is a major key to success. Hammock talk come soon. Wraith talk. Cloth talk. Another one. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Let’s see what Chef Dee got that they don’t want us to eat.</h4>
-              <h4>Why live rough? Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing. Let’s see what Chef Dee got that they don’t want us to eat.</h4>
+              <h4>I am a Front End Engineer. I graduated from
+                <a href="https://www.theironyard.com/" target="_blank">The Iron Yard</a>
+                in April, 2016, where I learned to build the web with some of the latest technologies. I love to open up an empty text editor and watch code come to life.
+              </h4>
+              <h4></h4>
             </div>
             <div class="about-photo-wrapper col-md-4">
               <img src="./images/me.jpg" alt="">
@@ -61,6 +71,7 @@
 
     <!-- skills -->
       <section class="skills-outer">
+        <a name="skills" class="skills-section"></a>
         <div class="skills-inner container">
           <h1 class="skills-title">{skills: <span>true</span>},</h1>
           <ul class="skills-list-items row">
@@ -166,6 +177,7 @@
 
       <!-- portfolio -->
       <section class="portfolio-outer">
+        <a name="portfolio"></a>
         <div class="portfolio-inner container-fluid">
           <div class="portfolio-title-wrapper row">
             <h1 class="portfolio-title col-md-offset-2">{portfolio: <span>3</span>},</h1>
@@ -241,6 +253,84 @@
           </div>
         </div>
       </section>
+
+      <!-- contact -->
+      <section class="contact-outer">
+        <a name="contact"></a>
+        <div class="contact-inner container">
+          <h1 class="contact-title">{contact: <span>true</span>};</h1>
+          <ul class="contact-list text-center">
+            <li class="contact-list-items">
+              <h1 class="contact-subs">where?</h1>
+              <h4 class="info-wrapper address-link-wrapper">
+                <a href="https://www.google.com/maps/place/113+Ethelridge+Dr,+Greenville,+SC+29609/@34.888436,-82.4145647,17z/data=!3m1!4b1!4m5!3m4!1s0x8858318af217edf9:0x9e6719558eb4f34a!8m2!3d34.888436!4d-82.412376?hl=en" target="_blank" class="info-link address-link">
+                  113 Ethelridge Dr
+                  <br>
+                  Greenville, SC 29609
+                </a>
+              </h4>
+            </li>
+            <li class="contact-list-items">
+              <h1 class="contact-subs">phone</h1>
+              <h4 class="info-wrapper phone-wrapper">
+                <a href="tel://1-407-600-6737" class="info-link phone-link">
+                  407 600 6737
+                </a>
+              </h4>
+            </li>
+            <li class="contact-list-items">
+              <h1 class="contact-subs">email</h1>
+              <h4 class="info-wrapper email-wrapper">
+                <a href="mailto:me@brandonemerson.io" class="info-link email-link">
+                  me@brandonemerson.io
+                </a>
+              </h4>
+            </li>
+            <li class="contact-list-items">
+              <h1 class="contact-subs">
+                <a href="be-resume.pdf" target="_blank" class="resume-link">resume</a>
+              </h1>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer-outer">
+        <div class="footer-inner">
+          <span class="copyright">Copyright &copy; 2016 brandon<span>emerson</span>.io</span>
+
+
+
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a href="https://github.com/Bemerson77" target="_blank" class="footer-nav-link">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="https://www.facebook.com/Brandon.Emerson77" target="_blank" class="footer-nav-link">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="https://www.instagram.com/izzbrancuh/" target="_blank" class="footer-nav-link">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="https://twitter.com/Izzbrancuh" target="_blank" class="footer-nav-link">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="https://www.linkedin.com/in/brandon-emerson-141047120" target="_blank" class="footer-nav-link">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
     </div>
     <script src="js/bundle.js"></script>
   </body>

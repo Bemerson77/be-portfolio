@@ -41,6 +41,35 @@
   top: $top;
 }
 
+// @mixin change($height, $width) {
+//   transition-duration: 0.5s;
+//   position: absolute;
+//   height: $height;
+//   width: $width;
+//   top: 10px;
+//   background-color: white;
+// }
+//
+// @mixin change-before($height, $width, $top) {
+//   transition-duration: 0.5s;
+//   position: absolute;
+//   width: $width;
+//   height: $height;
+//   background-color: white;
+//   content: "";
+//   top: $top;
+// }
+//
+// @mixin change-after($height, $width, $top) {
+//   transition-duration: 0.5s;
+//   position: absolute;
+//   width: $width;
+//   height: $height;
+//   background-color: white;
+//   content: "";
+//   top: $top;
+// }
+
 .btn2{
   @include btn(30px, 25px);
 
@@ -55,6 +84,18 @@
       @include icon-after(4px, 28px, 10px);
     }
   }
+
+  // .change {
+  //   @include change(4px, 28px);
+  //
+  //   &:before{
+  //     @include change-before(4px, 28px, -10px);
+  //   }
+  //
+  //   &:after{
+  //     @include change-after(4px, 28px, 10px);
+  //   }
+  // }
 
   &.open {
     .icon {

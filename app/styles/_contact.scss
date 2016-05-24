@@ -1,0 +1,72 @@
+$contact-height: 780px;
+
+.contact-outer {
+  height: $contact-height;
+  @extend %light-grey-background;
+}
+
+.contact-inner {
+  height: $contact-height;
+}
+
+.contact-title {
+  margin: 80px;
+  text-align: left;
+  font-size: 70px;
+  @extend %grey-font;
+
+  span {
+    @extend %pink-font;
+  }
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list-items {
+  margin-bottom: 30px;
+  height: 100px;
+}
+
+.contact-subs {
+  @extend %grey-font;
+  margin-bottom: 20px;
+}
+
+.info-wrapper {
+  position: relative;
+}
+
+.info-link, .info-link:link, .info-link:visited, .info-link:hover, .info-link:focus, .info-link:active {
+  @extend %pink-font;
+  text-decoration: none !important;
+
+  &:hover {
+    @extend %pink-font;
+    text-decoration: none !important;
+    font-size: 19px;
+    transition: font-size 0.2s ease-in-out;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+  }
+}
+
+.resume-link, .resume-link:link, .resume-link:visited, .resume-link:hover, .resume-link:focus, .resume-link:active {
+  @extend %pink-font;
+  text-decoration: none !important;
+
+  &:hover {
+    @extend %pink-font;
+    text-decoration: none !important;
+    font-size: 37px;
+    transition: font-size 0.2s ease-in-out;
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+  }
+}
