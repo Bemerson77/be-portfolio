@@ -86,3 +86,19 @@ $skills-height: 920px;
     transition-delay: initial, initial;
   }
 }
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+
+$skills-height: 1350px;
+
+.skills-outer {
+  height: $skills-height;
+}
+
+.skills-inner {
+  height: $skills-height;
+}
+
+}

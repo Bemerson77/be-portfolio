@@ -156,3 +156,28 @@ $header-font-size: 15px;
   line-height: 75px;
   text-transform: uppercase;
 }
+
+
+// MEDIA QUERY
+
+
+@media (max-width: 768px) {
+
+.header-inner {
+
+  &.menu-active {
+    height: 100vh;
+  }
+}
+
+.header-nav {
+  width: 30%;
+  margin-top: 75px;
+}
+
+.header-nav-item {
+  display: block;
+
+}
+
+}

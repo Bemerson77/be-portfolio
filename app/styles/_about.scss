@@ -42,3 +42,28 @@ $about-height: 830px;
     border-radius: 2px;
   }
 }
+
+
+// MEDIA QUERY
+
+@media (max-width: 768px) {
+
+$about-height: 600px;
+
+.about-outer {
+  height: $about-height;
+}
+
+.about-inner {
+  height: $about-height
+}
+
+.about-content {
+
+  h4 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+}
