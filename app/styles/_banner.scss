@@ -73,3 +73,16 @@
     text-decoration: none !important;
   }
 }
+
+// media query
+
+@media (max-width: 660px) {
+
+  .banner-title {
+    font-size: 42px;
+  }
+
+  .banner-sub {
+    font-size: 15px;
+  }
+}

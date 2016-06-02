@@ -70,3 +70,33 @@ $contact-height: 780px;
     transition-delay: initial;
   }
 }
+
+// media query
+
+@media (max-width: 650px) {
+
+  .contact-title {
+    margin: 20px;
+    font-size: 60px;
+  }
+
+
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+  $contact-height: 680px;
+
+  .contact-outer {
+    height: $contact-height;
+  }
+
+  .contact-inner {
+    height: $contact-height;
+  }
+
+  .contact-title {
+    margin: 20px;
+    font-size: 60px;
+  }
+
+}

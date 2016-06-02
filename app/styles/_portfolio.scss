@@ -227,3 +227,36 @@ $project-height: 450px;
 .code-link-wrapper {
   margin-left: 30px;
 }
+
+
+// Media Query
+
+// xs
+@media (max-width: 650px) {
+
+  .portfolio-title {
+    margin: 20px;
+    font-size: 60px;
+  }
+
+  .project-title {
+    font-size: 50px;
+
+    &.project-title-hover {
+      top: 40px;
+    }
+  }
+
+  .project-sub {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+
+  .portfolio-title {
+    margin: 20px;
+    font-size: 60px;
+  }
+
+}

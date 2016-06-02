@@ -50,3 +50,32 @@ $footer-height: 130px;
     @extend %pink-font;
   }
 }
+
+// media query
+
+@media (max-width: 600px) {
+  $footer-height: 230px;
+
+  .footer-outer {
+    height: $footer-height;
+  }
+
+  .footer-inner {
+    height: $footer-height;
+  }
+
+  .footer-nav {
+    text-align: center;
+    float: none;
+    display: block;
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+
+  }
+  .copyright {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+}

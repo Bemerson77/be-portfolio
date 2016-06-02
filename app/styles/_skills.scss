@@ -68,7 +68,7 @@ $skills-height: 920px;
   // @extend %light-grey-font;
   color: white;
   position: relative;
-  bottom: 100px;
+  bottom: 115px;
   opacity: 0;
   transition: opacity 0.15s, bottom 0.15s ease-in-out;
   transition-property: opacity, bottom;
@@ -89,9 +89,77 @@ $skills-height: 920px;
 
 // MEDIA QUERY
 
+//xs
 @media (max-width: 768px) {
+  $skills-height: 910px;
 
-$skills-height: 1350px;
+  .skills-outer {
+    height: $skills-height;
+  }
+
+  .skills-inner {
+    height: $skills-height;
+  }
+
+  .skills-title {
+    margin: 20px;
+    font-size: 60px;
+  }
+
+  .skills-list-items {
+    font-size: 7em;
+  }
+
+  .skills-item {
+    margin-bottom: 0;
+  }
+
+  .skills-item-title {
+    font-size: 21px;
+    bottom: 55px;
+
+    &.skills-hover {
+      bottom: 85px;
+
+    }
+  }
+}
+
+//small
+@media (min-width: 768px) and (max-width: 992px) {
+  $skills-height: 750px;
+
+  .skills-outer {
+    height: $skills-height;
+  }
+
+  .skills-inner {
+    height: $skills-height;
+  }
+
+  .skills-list-items {
+    font-size: 6.8em;
+  }
+
+  .skills-item {
+    margin-bottom: 20px;
+  }
+
+  .skills-item-title {
+    font-size: 21px;
+    bottom: 55px;
+
+    &.skills-hover {
+      bottom: 85px;
+
+    }
+  }
+}
+
+// medium
+@media (min-width: 992px) and (max-width: 1199px) {
+
+$skills-height: 820px;
 
 .skills-outer {
   height: $skills-height;
@@ -99,6 +167,20 @@ $skills-height: 1350px;
 
 .skills-inner {
   height: $skills-height;
+}
+
+.skills-list-items {
+  font-size: 9em;
+}
+
+.skills-item-title {
+  font-size: 30px;
+  bottom: 85px;
+
+  &.skills-hover {
+    bottom: 115px;
+
+  }
 }
 
 }
