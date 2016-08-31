@@ -595,6 +595,36 @@
 .project-three-img:hover::before {
   opacity: 0.8; }
 
+.project-four-img {
+  background: url("../images/majesticThai.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 450px;
+  position: relative; }
+
+.project-four-img::before {
+  content: "";
+  position: absolute;
+  background: #0e0e0e;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.35s;
+          transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: initial;
+          transition-delay: initial; }
+
+.project-four-img:hover::before {
+  opacity: 0.8; }
+
 .project-slide-wrapper {
   position: relative;
   top: 20px;
@@ -6628,4 +6658,5 @@ img {
   z-index: 10;
   width: 100%;
   padding: 0; }
+
 /*# sourceMappingURL=app.css.map */
